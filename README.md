@@ -24,13 +24,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: puppet-parser-validate
-      uses: irasnyd/puppet-parser-validate-action@master
+      uses: LCOGT/puppet-parser-validate-action@master
       with:
         args: ./
 ```
 
 If you wish to use a specific version, without needing to rebuild the container
-each time, you can use the version hosted on the [Docker Hub](https://hub.docker.com/r/irasnyd/puppet-parser-validate-action).
+each time, you can use the version hosted on the [Docker Hub](https://hub.docker.com/r/lcogtwebmaster/puppet-parser-validate-action).
 
 For example:
 
@@ -49,7 +49,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: puppet-parser-validate
-      uses: docker://irasnyd/puppet-parser-validate-action:5.5.19
+      uses: docker://lcogtwebmaster/puppet-parser-validate-action:5.5.20
       with:
         args: ./
 ```
