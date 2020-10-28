@@ -49,7 +49,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: puppet-parser-validate
-      uses: docker://lcogtwebmaster/puppet-parser-validate-action:5.5.20
+      uses: docker://lcogtwebmaster/puppet-parser-validate-action:5.5.22
       with:
         args: ./
 ```
